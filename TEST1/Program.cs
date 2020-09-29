@@ -8,5 +8,12 @@ namespace TEST1
         {
             Console.WriteLine("Hello World!!!");
         }
+
+        {
+            double s1;
+            s1 = Geometry.GeometryLength(1.0, 1.0);
+            System.Console.WriteLine("La ecuación s1 da como resultado:" + s1);
+        }
     }
+
 }
