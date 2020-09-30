@@ -8,7 +8,7 @@ namespace TEST1
         {
             double s1;
             s1 = Geometry.GetVectorLength(1.0, 1.0);
-            Console.WriteLine("La ecuación s1 da como resultado:" + s1);
+            Console.WriteLine("La longitud del vector s1 es: " + s1);
         }
 
      
