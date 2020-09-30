@@ -6,14 +6,13 @@ namespace TEST1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!!!");
+            double s1;
+            s1 = Geometry.GetVectorLength(1.0, 1.0);
+            Console.WriteLine("La ecuación s1 da como resultado:" + s1);
         }
 
-        {
-            double s1;
-            s1 = Geometry.GeometryLength(1.0, 1.0);
-            System.Console.WriteLine("La ecuación s1 da como resultado:" + s1);
-        }
+     
+               
     }
 
 }
