@@ -21,5 +21,16 @@ namespace TEST1
             else
                 return b;
         }
+
+
+        // IsEven devuelve true si el valor es par
+        // y false si es impar
+        public static bool IsEven(int value)
+        {
+            if (value % 2 == 0)
+                return true;
+            else
+                return false;
+        }
     }
 }

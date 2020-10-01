@@ -6,9 +6,9 @@ namespace TEST1
     {
         static void Main(string[] args)
         {
-            double s1;
-            s1 = Utils.GetMaxValue(-8, 8);
-            Console.WriteLine("El valor más alto es: " + s1);
+            bool s1;
+            s1 = Utils.IsEven(5);
+            Console.WriteLine("¿El valor es par? " + s1);
         }
 
      
