@@ -7,8 +7,8 @@ namespace TEST1
         static void Main(string[] args)
         {
             double s1;
-            s1 = Geometry.GetVectorLength(1.0, 1.0);
-            Console.WriteLine("La longitud del vector s1 es: " + s1);
+            s1 = Utils.GetMinValue(-8, -55);
+            Console.WriteLine("El valor más bajo es: " + s1);
         }
 
      
