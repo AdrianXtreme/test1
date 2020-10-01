@@ -13,5 +13,13 @@ namespace TEST1
             else
                 return b;
         }
+
+        public static int GetMaxValue(int a, int b)
+        {
+            if (a > b)
+                return a;
+            else
+                return b;
+        }
     }
 }
