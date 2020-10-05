@@ -6,9 +6,8 @@ namespace TEST1
     {
         static void Main(string[] args)
         {
-            bool s1;
-            s1 = Utils.IsEven(5);
-            Console.WriteLine("¿El valor es par? " + s1);
+            Ejercicios.Ejercicio1();
+
         }
 
      
