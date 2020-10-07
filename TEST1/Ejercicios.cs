@@ -38,12 +38,12 @@ namespace TEST1
 
         public static void Ejercicio3(int numerico)
         {
-            int i;
-            i = 2;
-            while (i < numerico)
             {
-                if (Utils.IsPrime(numerico))
-                    System.Console.WriteLine("Este número es primo");
+                bool es_primo = Utils.IsPrime(numerico);
+                if (es_primo)
+                    System.Console.WriteLine("El número " + numerico + " es primo");
+                else
+                    System.Console.WriteLine("El número " + numerico + " no es primo");
             }
         }
 

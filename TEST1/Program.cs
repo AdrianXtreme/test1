@@ -6,7 +6,16 @@ namespace TEST1
     {
         static void Main(string[] args)
         {
-            Ejercicios.Ejercicio3(3);
+            {
+                int i = 2;
+                while (i <= 10)
+                {
+                    Ejercicios.Ejercicio3(i);
+                    i++;
+                }
+            }
+
+
 
         }
 
