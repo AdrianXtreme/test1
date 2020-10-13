@@ -6,7 +6,7 @@ namespace TEST1
     {
         static void Main(string[] args)
         {
-            Ejercicios.Ejercicio8();
+            Ejercicios.Ejercicio9();
 
 
 

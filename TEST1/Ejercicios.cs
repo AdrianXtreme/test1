@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Net.Security;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 
@@ -94,8 +95,18 @@ namespace TEST1
                 System.Console.WriteLine(5 - n);
                 n++;
             }
-
-
+        }
+        public static void Ejercicio9()
+        {
+            int n = 0;
+            while (n <= 50)
+            {
+                if (Utils.IsEven(n))
+                    System.Console.WriteLine(n);
+                else
+                    System.Console.WriteLine(-n);
+                n++;
+            }
         }
     }
 }
