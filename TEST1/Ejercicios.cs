@@ -56,6 +56,17 @@ namespace TEST1
             }
         }
 
+        public static void Ejercicio5()
+        {
+            int n = 0;
+            while (n <= 200)
+            {
+                System.Console.WriteLine(n * 3);
+                n++;
+            }
+            
+        }
+
 
     }
 }
