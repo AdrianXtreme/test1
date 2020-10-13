@@ -100,11 +100,29 @@ namespace TEST1
         {
             int n = 0;
             while (n <= 50)
-            {
+            {   
+                // if (n % 2 == 0)
                 if (Utils.IsEven(n))
                     System.Console.WriteLine(n);
                 else
                     System.Console.WriteLine(-n);
+                n++;
+            }
+        }
+        public static void Ejercicio10()
+        {
+            int aa = 0;
+            int a = 1;
+            int n = 0;
+            System.Console.WriteLine(aa);
+            System.Console.WriteLine(a);
+            while (n <= 50)
+            {
+                System.Console.WriteLine(a + aa);
+                int aux = a;
+                a = a + aa;
+                aa = aux;
+
                 n++;
             }
         }
