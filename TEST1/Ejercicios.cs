@@ -46,6 +46,15 @@ namespace TEST1
                     System.Console.WriteLine("El número " + numerico + " no es primo");
             }
         }
+        public static void Ejercicio4()
+        {
+            int n = 0;
+            while (n <= 200)
+            {
+                System.Console.WriteLine(n);
+                n++;
+            }
+        }
 
 
     }
