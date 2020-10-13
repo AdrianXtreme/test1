@@ -86,5 +86,16 @@ namespace TEST1
 
 
         }
+        public static void Ejercicio8()
+        {
+            int n = 0;
+            while (n <= 50)
+            {
+                System.Console.WriteLine(5 - n);
+                n++;
+            }
+
+
+        }
     }
 }
