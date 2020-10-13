@@ -64,9 +64,27 @@ namespace TEST1
                 System.Console.WriteLine(n * 3);
                 n++;
             }
-            
+
         }
+        public static void Ejercicio6()
+        {
+            int n = 0;
+            while (n <= 50)
+            {
+                System.Console.WriteLine(n * n);
+                n++;
+            }
+        }
+        public static void Ejercicio7()
+        {
+            int n = 0;
+            while (n <= 50)
+            {
+                System.Console.WriteLine(n * n + 1);
+                n++;
+            }
 
 
+        }
     }
 }
