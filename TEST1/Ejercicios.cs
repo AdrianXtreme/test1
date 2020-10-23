@@ -126,5 +126,17 @@ namespace TEST1
                 n++;
             }
         }
+
+        public static void Asteriscos(int count)
+        {
+                int i = 0;
+            while (i < count)
+            {
+                System.Console.Write("*");
+                i++;
+            }
+                
+        }
+        
     }
 }
