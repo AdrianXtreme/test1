@@ -137,6 +137,13 @@ namespace TEST1
             }
                 
         }
-        
+        public static void Asteriscos1(int count)
+        {
+            for (int i = 0; i < count; i++)
+            {
+                System.Console.Write("*");
+            }
+
+        }
     }
 }
