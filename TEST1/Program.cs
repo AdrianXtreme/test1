@@ -6,7 +6,7 @@ namespace TEST1
     {
         static void Main(string[] args)
         {
-            EjerciciosExamen.RestaReales(5, 5);
+            EjerciciosExamen.MinValue2(5, 3, 6);
 
 
 
