@@ -19,7 +19,7 @@ namespace TEST1
 
         //Hacer una función a la que se le pasen dos enteros y devuelva el menor de ellos
 
-       
+
         public static int MinValue(int num1, int num2)
         {
             if (num1 < num2)
@@ -27,7 +27,7 @@ namespace TEST1
             else
                 return num2;
         }
-        
+
         //Hacer una función que reciba como parámetro dos enteros y devuelva si el primero es menor que el segundo
 
         public static bool EsMenor(int num1, int num2)
@@ -85,13 +85,82 @@ namespace TEST1
                 else
                     return c;
             }
+        }
 
+        // Hacer una función que reciba un código de error e imprima por pantalla lo siguiente:
+        // - "Error grave" si el código de error es 0
+        // - "Error moderado" --- 1
+        // - "Error leve" --- 2
+        // - "Error desconocido" en otro caso
 
+        public static void PrintError(int code)
+        {
+            switch (code)
+            {
+                case 0:
+                    System.Console.WriteLine("Error grave");
+                    break;
+                case 1:
+                    System.Console.WriteLine("Error moderado");
+                    break;
+                case 2:
+                    System.Console.WriteLine("Error leve");
+                    break;
+                default:
+                    System.Console.WriteLine("Error desconocido");
+                    break;
 
-
-            
-
+            }
 
         }
+
+        // Hacer una función a la que se le pase un número e imprima por pantalla una serie como la siguiente:
+        // función (10) --> 0, 3, 6, 9
+        // función (15) --> 0, 3, 6, 9, 12, 15
+        // función (2) --> 0
+
+        public static void PrintSerie(int num)
+        {
+            int counter = 0;
+            while (counter <= num)
+            {
+                System.Console.Write(counter + ", ");
+                counter += 3;
+            }
+        }
+
+        // Hacer una función que imprima por pantalla la siguiente serie:
+        // Serie (10) --> 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+        // Serie (3) --> 0, 1, 2
+
+        public static void PrintSerie2(int n)
+        {
+            // int i = 0;
+            //  while (i < n)
+            //  {
+            //     System.Console.Write(i + ", ");
+            //       i++;
+            //  }
+            for (int i = 0; i < n; i++)
+                System.Console.Write(i + ", ");
+        }
+
+        // Hacer una función que imprima por pantalla la siguiente serie:
+        // Serie (10) --> 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+        // Serie (3) --> 0, 1, 2
+
+        public static void PrintSerie3(int n)
+        {
+            for (int i = 0; i < n; i++)
+            {
+                if (i == n - 1)
+                    System.Console.Write(i);
+                else
+                    System.Console.Write(i + ", ");
+            }
+            
+                
+        }
+
     }
 }
