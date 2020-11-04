@@ -6,7 +6,7 @@ namespace TEST1
     {
         static void Main(string[] args)
         {
-            EjerciciosExamen.PrintSerie3(-3);
+            EjerciciosExamen.PrintAsteriscos2(6);
 
 
 

@@ -162,5 +162,41 @@ namespace TEST1
                 
         }
 
+        // Hacer una función a la que se le pase un número "n" e imprima por pantalla "n" asteriscos
+
+        public static void PrintAsteriscos(int n)
+        {
+            for (int i = 0; i < n; i++)
+                System.Console.Write("*");
+        }
+
+        // Hacer una función a la que se le pase un número "n" e imprima por pantalla "n" elementos(*+*+)
+        public static void PrintSerie4(int n)
+        {
+            for (int i = 0; i < n; i++)
+            {
+                if (i % 2 == 0)
+                    System.Console.Write("*");
+                else
+                    System.Console.Write("+");
+            }
+        }
+
+        // Hacer una función que devuelva el menor de nueve enteros. Debe ocupar una sola línea
+        public static int GetMinValue2(int num1, int num2, int num3, int num4, int num5, int num6, int num7, int num8, int num9)
+        {
+            int menor1 = MinValue2(num1, num2, num3); int menor2 = MinValue2(num4, num5, num6); int menor3 = MinValue2(num7, num8, num9); return MinValue2(menor1, menor2, menor3);
+        }
+
+        // Hacer una función
+        public static void PrintAsteriscos2(int n)
+        {
+            for (int f = 0; f < n; f++)
+                        {
+                            for (int c = 0; c < n; c++)
+                                System.Console.Write("*");
+                            System.Console.WriteLine();
+                        }
+        }
     }
 }
