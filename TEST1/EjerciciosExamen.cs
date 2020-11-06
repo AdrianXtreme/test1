@@ -192,11 +192,106 @@ namespace TEST1
         public static void PrintAsteriscos2(int n)
         {
             for (int f = 0; f < n; f++)
-                        {
-                            for (int c = 0; c < n; c++)
-                                System.Console.Write("*");
-                            System.Console.WriteLine();
-                        }
+                {
+                    for (int c = 0; c < n; c++)
+                        System.Console.Write("*");
+                    System.Console.WriteLine();
+                }
         }
+
+        // Hacer una fúnción que imprima para n = 3 ***
+        //                                          +++
+        //                                          ***
+
+        public static void PrintSerie5(int n)
+        {
+            for (int f = 0; f < n; f++)
+            {
+                for (int c = 0; c < n; c++)
+                {
+                    if (f % 2 == 0)
+                        System.Console.Write("*");
+                    else
+                        System.Console.Write("+");
+                }
+                System.Console.WriteLine();
+            }
+        }
+
+        // Hacer una función
+
+        public static void PrintSerie6(int n)
+        {
+            for (int f = 0; f < n; f++)
+            {
+                for (int c = 0; c <= f; c++)
+                    System.Console.Write("*");
+                System.Console.WriteLine();
+            }
+        }
+
+        public static void PrintSerie7(int n)
+        {
+            for(int f = 0; f < n; f++)
+            {
+                 int nespacios = n - f - 1;
+                 int nasteriscos = f + 1;
+                 for(int c = 0; c < nespacios; c++)
+                    System.Console.Write(" ");
+                 for (int c = 0; c < nasteriscos; c++)
+                    System.Console.Write("*");
+                 System.Console.WriteLine();
+            }
+            
+        }
+
+        public static void PrintSerie8(int n)
+        {
+            for (int f = 0; f < n; f++)
+            {
+                int nespacios1 = n - f - 1;
+                int nespacios2 = f * 2;
+                for (int c = 0; c < nespacios1; c++)
+                    System.Console.Write(" ");
+                System.Console.Write("*");
+                for (int c = 0; c < nespacios2; c++)
+                    System.Console.Write(" ");
+                System.Console.Write("*");
+                System.Console.WriteLine();
+            }
+        }
+
+        public static void PrintSerie9(int n)
+        {
+            for (int f = 0; f < n; f++)
+            {
+                int nespacios1 = f;
+                int nespacios2 = (n - f - 1) * 2;
+                for (int c = 0; c < nespacios1; c++)
+                    System.Console.Write(" ");
+                System.Console.Write("*");
+                for (int c = 0; c < nespacios2; c++)
+                    System.Console.Write(" ");
+                System.Console.Write("*");
+                System.Console.WriteLine();
+            }
+        }
+
+        public static void PrintSerie10(int n)
+        {
+            PrintSerie8(n);
+            PrintSerie9(n);
+        }
+
+        // Hacer una función que devuelva 2 elevado a n, siendo n el parámetro que recibe la función
+
+        public static int potencia2(int n)
+        {
+            int result = 1;
+            for (int i = 0; i < n; i++)
+                result *= 2;
+        }
+
+
     }
 }

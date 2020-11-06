@@ -6,8 +6,17 @@ namespace TEST1
     {
         static void Main(string[] args)
         {
-            EjerciciosExamen.PrintAsteriscos2(6);
-
+            // EjerciciosExamen.PrintSerie10(5);
+            while (true)
+                {
+                    for (int i = 0; i < 10; i++)
+                    {
+                        EjerciciosExamen.PrintSerie10(i);
+                        System.Threading.Thread.Sleep(10);
+                        System.Console.Clear();
+                    }
+                }
+            }
 
 
         }
@@ -16,4 +25,3 @@ namespace TEST1
                
     }
 
-}
