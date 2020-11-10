@@ -349,9 +349,9 @@ namespace TEST1
 
         public static int Sumatorio(int n)
         {        
-                int result = 1;
-                for (int i = 0; i <= n; i++)
-                    result += n;
+                int result = 0;
+                for (int i = 1; i <= n; i++)
+                    result += i;
                 return result;
             
         }
