@@ -158,8 +158,8 @@ namespace TEST1
                 else
                     System.Console.Write(i + ", ");
             }
-            
-                
+
+
         }
 
         // Hacer una función a la que se le pase un número "n" e imprima por pantalla "n" asteriscos
@@ -192,11 +192,11 @@ namespace TEST1
         public static void PrintAsteriscos2(int n)
         {
             for (int f = 0; f < n; f++)
-                {
-                    for (int c = 0; c < n; c++)
-                        System.Console.Write("*");
-                    System.Console.WriteLine();
-                }
+            {
+                for (int c = 0; c < n; c++)
+                    System.Console.Write("*");
+                System.Console.WriteLine();
+            }
         }
 
         // Hacer una fúnción que imprima para n = 3 ***
@@ -232,17 +232,17 @@ namespace TEST1
 
         public static void PrintSerie7(int n)
         {
-            for(int f = 0; f < n; f++)
+            for (int f = 0; f < n; f++)
             {
-                 int nespacios = n - f - 1;
-                 int nasteriscos = f + 1;
-                 for(int c = 0; c < nespacios; c++)
+                int nespacios = n - f - 1;
+                int nasteriscos = f + 1;
+                for (int c = 0; c < nespacios; c++)
                     System.Console.Write(" ");
-                 for (int c = 0; c < nasteriscos; c++)
+                for (int c = 0; c < nasteriscos; c++)
                     System.Console.Write("*");
-                 System.Console.WriteLine();
+                System.Console.WriteLine();
             }
-            
+
         }
 
         public static void PrintSerie8(int n)
@@ -293,6 +293,67 @@ namespace TEST1
             return result;
         }
 
+        // bandera USA
 
+        public static void BanderaUSA()
+        {
+            for (int f = 0; f < 10; f++)
+            {
+                for (int c = 0; c < 70; c++)
+                {
+                    if (0 <= c && c <= 4 && 0 <= f && f <= 2)
+                    {
+                        int flag = f + c;
+                        if (flag % 2 == 0)
+                            System.Console.Write("+");
+                        else
+                            System.Console.Write(" ");
+                    }
+                    else if (f % 4 < 2)
+                        System.Console.Write("*");
+                    else
+                        System.Console.Write(" ");
+                }
+                System.Console.WriteLine();
+            }
+
+        }
+
+        // Hacer una función que devuelva la distancia entre dos puntos 2D
+
+        public static double Distancia2D(double x1, double y1, double x2, double y2)
+        {
+            double vx = x2 - x1;
+            double vy = y2 - y1;
+            return System.Math.Sqrt(vx * vx + vy * vy);
+        }
+
+        public static void BanderaJapón()
+        {
+            for (int f = 0; f < 15; f++)
+            {
+                for (int c = 0; c < 70; c++)
+                {
+                    if (f == 0 || f == 14 || c == 0 || c == 69)
+                        System.Console.Write("*");
+                    else if (Distancia2D(35, 7, c, f) <= 2)
+                        System.Console.Write("#");
+                    else
+                        System.Console.Write(" ");
+                }
+                System.Console.WriteLine();
+            }
+        }
+
+        // funcion que haga cosas aka devolver sumatorio de un numerico
+
+        public static int Sumatorio(int n)
+        {        
+                int result = 1;
+                for (int i = 0; i <= n; i++)
+                    result += n;
+                return result;
+            
+        }
     }
 }
