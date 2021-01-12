@@ -285,12 +285,12 @@ namespace TEST1
 
         // Hacer una función que devuelva 2 elevado a n, siendo n el parámetro que recibe la función
 
-        public static int potencia2(int n)
+        public static void potencia2(int n)
         {
             int result = 1;
             for (int i = 0; i < n; i++)
                 result *= 2;
-            return result;
+            System.Console.WriteLine(+ result);
         }
 
         // bandera USA
