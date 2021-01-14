@@ -30,20 +30,21 @@ namespace TEST1
             intList.Add(7);
             intList.Add(-2);
 
-            PrintList(intList);
+            // PrintList(intList);
+            IsOnList(intList);
 
-            for (int i = 0; i < intList.Count - 1; i++)
-            {
-                for (int j = i + 1; j < intList.Count; j++)
-                    if (intList[i] > intList[j])
-                    {
-                        int aux = intList[j];
-                        intList[j] = intList[i];
-                        intList[i] = aux;
-                    }
-            }
-            Console.WriteLine();
-            PrintList(intList);
+        //    for (int i = 0; i < intList.Count - 1; i++)
+        //    {
+        //        for (int j = i + 1; j < intList.Count; j++)
+        //            if (intList[i] > intList[j])
+        //            {
+        //                int aux = intList[j];
+        //                intList[j] = intList[i];
+        //               intList[i] = aux;
+        //            }
+        //    }
+        //    Console.WriteLine();
+        //    PrintList(intList);
         }
 
         public static void PrintList(List<int> list)
@@ -52,6 +53,34 @@ namespace TEST1
                 Console.WriteLine(list[i]);
         }
 
+        public static bool IsOnList(int n, List<int> list)
+        {
+            for (int i = 0; i < list.Count; i++)
+            {
+                if (list[i] == n)
+                    return true;
+            }
+            return false;
+        }
+
+        public static bool BinarySearch(int n, List<int> list)
+        {
+            int min = 0;
+            int max = list.Count - 1;
+            while (min <= max)
+            {                
+                int mid = (min + max) / 2;
+                if (list[mid] == n)
+                    return true;
+
+                if (n < mid)
+                    max = mid - 1;               
+
+                if (n > mid)
+                    min = mid + 1;                                
+            }
+            return false;
+        }
     }           
 }
 
